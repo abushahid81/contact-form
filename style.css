@@ -8,11 +8,11 @@ body{
 .container{
     display: flex;
     justify-content: center; 
-    
+    color: red;
 }
 form{
     border: 1px solid rgb(207, 207, 241);
-    padding: 30px;
+    padding: 40px;
     background-color: rgb(72, 154, 195);
     border-radius: 8px;
 }
@@ -33,18 +33,7 @@ input{
     margin-top: 20px;
     padding-left: 30px;
 }
-.btn-zero{
-    border-radius: 5px;
-    background-color: #d9f6a3;
-    color: rgb(9, 9, 9);
-    font-size: 15px;
-    font-weight: 600;
-    padding: 10px 150px 10px 165px;
-}
-.btn-zero:hover{
-    background-color: rgb(51, 231, 35);
-    color: rgb(6, 6, 6);     
-}
+
 label{
     color: white;
 }

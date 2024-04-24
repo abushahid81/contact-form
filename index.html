@@ -3,48 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact-form</title>
+    <title>login</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    </head>
-    <body>
-       
-    <section>
-        
-        <div class="container">  
-        <form action="Thank you.html" target="_blank">
+</head>
+<body>
+    <section class="container">
+        <form action="Thank.html" method="post" onsubmit="return validate()">
             <h2>Contact us</h2> 
 
-            <div class="username1">
-              <label for="username">Username</label><br/>
-              <input type="text" placeholder="">  
-            </div><br/>
+            <div class="name">
+              <label for="name1">Username</label><br/>
+              <input type="text" name="name1" id="name1"> 
+              <p id="useren"></p> 
+            </div>
+            
 
             <div class="email-byt">
               <label for="email">Email</label><br/>
-              <input type="email" placeholder="">  
-            </div><br/>
+              <input type="email" class="form-control" name="email"  id="email"> 
+              <p id="emailid"></p>  
+            </div>
 
             <div class="number-zero">
-                <label for="number">Contact</label><br/>
-                <input type="number" placeholder="">  
-              </div><br/>
+                <label for="mobilenumber">Contact</label><br/>
+                <input type="tel" name="mobilenumber" id="number"> 
+                <p id="mobilenum"></p>  
+              </div>
 
               <div class="password-x">
-                <label for="Password">Password</label><br/>
-                <input type="number" placeholder="">  
-              </div><br/>
+                <label for="password1">Password</label><br/>
+                <input type="password" name="password1" id="Password1">
+                <p id="pass1"></p>   
+              </div>
               
-              <div class="message-y">
-                <textarea name="Message"cols="30" rows="10">Message</textarea>
-                 </div>
-
-              <div class="btn">
-                <button class="btn-zero">Submit</button>
-              </div>  
+            <button type="submit">Submit</button>
         </form>
-            </div>
     </section>
-    
+    <script src="javascript.js"></script>
 </body>
 </html>
